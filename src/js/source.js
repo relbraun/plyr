@@ -79,7 +79,7 @@ const source = {
         // Set attributes for audio and video
         if (this.isHTML5) {
           if (this.config.crossorigin) {
-            this.media.setAttribute('crossorigin', '');
+            this.media.setAttribute('crossorigin', this.config.crossorigin);
           }
           if (this.config.autoplay) {
             this.media.setAttribute('autoplay', '');
