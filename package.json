@@ -1,6 +1,6 @@
 {
-  "name": "plyr",
-  "version": "3.7.8",
+  "name": "@relbraun/plyr",
+  "version": "3.7.9",
   "description": "A simple, accessible and customizable HTML5, YouTube and Vimeo media player",
   "homepage": "https://plyr.io",
   "author": "Sam Potts <sam@potts.es>",
@@ -23,10 +23,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git://github.com/sampotts/plyr.git"
+    "url": "git://github.com/relbraun/plyr.git"
   },
   "bugs": {
-    "url": "https://github.com/sampotts/plyr/issues"
+    "url": "https://github.com/relbraun/plyr/issues"
   },
   "browserslist": "> 1%",
   "scripts": {
