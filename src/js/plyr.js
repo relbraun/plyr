@@ -223,7 +223,7 @@ class Plyr {
 
         // Get config from attributes
         if (this.media.hasAttribute('crossorigin')) {
-          this.config.crossorigin = true;
+          this.config.crossorigin = this.media.getAttribute('crossorigin');
         }
         if (this.media.hasAttribute('autoplay')) {
           this.config.autoplay = true;
