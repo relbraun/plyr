@@ -4,6 +4,7 @@
 // Please see README.md in the root or github.com/sampotts/plyr
 // ==========================================================================
 
+import './tab-focus';
 import 'custom-event-polyfill';
 import 'url-polyfill';
 
@@ -12,6 +13,7 @@ import Shr from 'shr-buttons';
 
 import Plyr from '../../../src/js/plyr';
 import sources from './sources';
+import toggleClass from './toggle-class';
 
 (() => {
   const production = 'plyr.io';
@@ -106,10 +108,10 @@ import sources from './sources';
 
     function render(type) {
       // Remove active classes
-      Array.from(buttons).forEach((button) => button.parentElement.classList.toggle('active', false));
+      Array.from(buttons).forEach((button) => toggleClass(button.parentElement, 'active', false));
 
       // Set active on parent
-      document.querySelector(`[data-source="${type}"]`).classList.toggle('active', true);
+      toggleClass(document.querySelector(`[data-source="${type}"]`), 'active', true);
 
       // Show cite
       Array.from(document.querySelectorAll('.plyr__cite')).forEach((cite) => {

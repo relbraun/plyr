@@ -2,9 +2,15 @@
 // Links
 // ==========================================================================
 
-.link {
-  align-items: center;
-  border-bottom: 1px dashed currentColor;
+// Make a <button> look like an <a>
+button.faux-link {
+  @extend a; // stylelint-disable-line
+  @include cancel-button-styles;
+}
+
+// Links
+a {
+  border-bottom: 1px dotted currentColor;
   color: $color-link;
   position: relative;
   text-decoration: none;
@@ -32,8 +38,8 @@
     }
   }
 
-  &:focus-visible {
-    @include focus-visible($color-link);
+  &.tab-focus {
+    @include tab-focus;
   }
 
   &.no-border::after {

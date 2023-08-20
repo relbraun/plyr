@@ -47,7 +47,6 @@ const captions = {
     // Inject the container
     if (!is.element(this.elements.captions)) {
       this.elements.captions = createElement('div', getAttributesFromSelector(this.config.selectors.captions));
-      this.elements.captions.setAttribute('dir', 'auto');
 
       insertAfter(this.elements.captions, this.elements.wrapper);
     }
