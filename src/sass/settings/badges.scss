@@ -2,6 +2,5 @@
 // Badges
 // ==========================================================================
 
-$plyr-badge-background: var(--plyr-badge-background, $plyr-color-gray-700) !default;
-$plyr-badge-text-color: var(--plyr-badge-text-color, #fff) !default;
-$plyr-badge-border-radius: var(--plyr-badge-border-radius, 2px) !default;
+$plyr-badge-bg: $plyr-color-gray-7 !default;
+$plyr-badge-color: #fff !default;
